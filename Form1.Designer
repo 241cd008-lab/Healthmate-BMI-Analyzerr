@@ -1,0 +1,337 @@
+﻿namespace HealthMateBMIAnalyzer
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            label1 = new Label();
+            lblName = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label2 = new Label();
+            label6 = new Label();
+            rdoMale = new RadioButton();
+            rdoFemale = new RadioButton();
+            cmbActivity = new ComboBox();
+            txtHeight = new TextBox();
+            txtWeight = new TextBox();
+            txtName = new TextBox();
+            txtAge = new TextBox();
+            btnCalculate = new Button();
+            btnClear = new Button();
+            lblBMIValue = new Label();
+            lblCategory = new Label();
+            lblRisk = new Label();
+            rtbReport = new RichTextBox();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            picLogo = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.AliceBlue;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DarkBlue;
+            label1.Location = new Point(325, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(316, 30);
+            label1.TabIndex = 0;
+            label1.Text = "HEALTH MATE BMI ANALYZER";
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName.Location = new Point(65, 102);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(54, 20);
+            lblName.TabIndex = 1;
+            lblName.Text = "NAME";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(69, 136);
+            label3.Name = "label3";
+            label3.Size = new Size(39, 20);
+            label3.TabIndex = 2;
+            label3.Text = "AGE";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(65, 174);
+            label4.Name = "label4";
+            label4.Size = new Size(69, 20);
+            label4.TabIndex = 3;
+            label4.Text = "GENDER";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(66, 238);
+            label5.Name = "label5";
+            label5.Size = new Size(68, 20);
+            label5.TabIndex = 4;
+            label5.Text = "WEIGHT";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(65, 285);
+            label2.Name = "label2";
+            label2.Size = new Size(64, 20);
+            label2.TabIndex = 5;
+            label2.Text = "HEIGHT";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(65, 327);
+            label6.Name = "label6";
+            label6.RightToLeft = RightToLeft.Yes;
+            label6.Size = new Size(76, 20);
+            label6.TabIndex = 6;
+            label6.Text = "ACTIVITY";
+            // 
+            // rdoMale
+            // 
+            rdoMale.AutoSize = true;
+            rdoMale.Location = new Point(162, 176);
+            rdoMale.Name = "rdoMale";
+            rdoMale.Size = new Size(56, 19);
+            rdoMale.TabIndex = 7;
+            rdoMale.TabStop = true;
+            rdoMale.Text = "MALE";
+            rdoMale.UseVisualStyleBackColor = true;
+            // 
+            // rdoFemale
+            // 
+            rdoFemale.AutoSize = true;
+            rdoFemale.Location = new Point(162, 201);
+            rdoFemale.Name = "rdoFemale";
+            rdoFemale.Size = new Size(68, 19);
+            rdoFemale.TabIndex = 8;
+            rdoFemale.TabStop = true;
+            rdoFemale.Text = "FEMALE";
+            rdoFemale.UseVisualStyleBackColor = true;
+            // 
+            // cmbActivity
+            // 
+            cmbActivity.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cmbActivity.FormattingEnabled = true;
+            cmbActivity.Items.AddRange(new object[] { "Sedentary", "Slightly active", "Active" });
+            cmbActivity.Location = new Point(162, 328);
+            cmbActivity.Name = "cmbActivity";
+            cmbActivity.Size = new Size(121, 23);
+            cmbActivity.TabIndex = 11;
+            // 
+            // txtHeight
+            // 
+            txtHeight.BorderStyle = BorderStyle.FixedSingle;
+            txtHeight.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtHeight.Location = new Point(162, 282);
+            txtHeight.Name = "txtHeight";
+            txtHeight.Size = new Size(100, 23);
+            txtHeight.TabIndex = 14;
+            // 
+            // txtWeight
+            // 
+            txtWeight.BorderStyle = BorderStyle.FixedSingle;
+            txtWeight.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtWeight.Location = new Point(162, 235);
+            txtWeight.Name = "txtWeight";
+            txtWeight.Size = new Size(100, 23);
+            txtWeight.TabIndex = 15;
+            // 
+            // txtName
+            // 
+            txtName.BorderStyle = BorderStyle.FixedSingle;
+            txtName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtName.Location = new Point(162, 109);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(100, 23);
+            txtName.TabIndex = 16;
+            // 
+            // txtAge
+            // 
+            txtAge.BorderStyle = BorderStyle.FixedSingle;
+            txtAge.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtAge.Location = new Point(162, 138);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(100, 23);
+            txtAge.TabIndex = 17;
+            // 
+            // btnCalculate
+            // 
+            btnCalculate.BackColor = Color.SeaGreen;
+            btnCalculate.FlatStyle = FlatStyle.Flat;
+            btnCalculate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalculate.ForeColor = Color.White;
+            btnCalculate.Location = new Point(69, 384);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(149, 39);
+            btnCalculate.TabIndex = 18;
+            btnCalculate.Text = "CALCULATE BMI";
+            btnCalculate.UseVisualStyleBackColor = false;
+            btnCalculate.Click += btnCalculate_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = Color.IndianRed;
+            btnClear.FlatStyle = FlatStyle.Flat;
+            btnClear.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClear.ForeColor = Color.White;
+            btnClear.Location = new Point(244, 384);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(75, 39);
+            btnClear.TabIndex = 19;
+            btnClear.Text = "CLEAR";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
+            // 
+            // lblBMIValue
+            // 
+            lblBMIValue.AutoSize = true;
+            lblBMIValue.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBMIValue.Location = new Point(549, 84);
+            lblBMIValue.Name = "lblBMIValue";
+            lblBMIValue.Size = new Size(42, 20);
+            lblBMIValue.TabIndex = 20;
+            lblBMIValue.Text = "BMI:";
+            // 
+            // lblCategory
+            // 
+            lblCategory.AutoSize = true;
+            lblCategory.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCategory.Location = new Point(549, 123);
+            lblCategory.Name = "lblCategory";
+            lblCategory.Size = new Size(90, 20);
+            lblCategory.TabIndex = 21;
+            lblCategory.Text = "CATEGORY:";
+            // 
+            // lblRisk
+            // 
+            lblRisk.AutoSize = true;
+            lblRisk.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRisk.Location = new Point(549, 160);
+            lblRisk.Name = "lblRisk";
+            lblRisk.Size = new Size(46, 20);
+            lblRisk.TabIndex = 22;
+            lblRisk.Text = "RISK:";
+            // 
+            // rtbReport
+            // 
+            rtbReport.BorderStyle = BorderStyle.FixedSingle;
+            rtbReport.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rtbReport.Location = new Point(549, 196);
+            rtbReport.Name = "rtbReport";
+            rtbReport.ScrollBars = RichTextBoxScrollBars.Vertical;
+            rtbReport.Size = new Size(365, 298);
+            rtbReport.TabIndex = 23;
+            rtbReport.Text = "";
+            // 
+            // picLogo
+            // 
+            picLogo.BorderStyle = BorderStyle.FixedSingle;
+            picLogo.Image = Properties.Resources.bmi;
+            picLogo.Location = new Point(153, 9);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new Size(109, 78);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            picLogo.TabIndex = 24;
+            picLogo.TabStop = false;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.AliceBlue;
+            ClientSize = new Size(978, 749);
+            Controls.Add(picLogo);
+            Controls.Add(rtbReport);
+            Controls.Add(lblRisk);
+            Controls.Add(lblCategory);
+            Controls.Add(lblBMIValue);
+            Controls.Add(btnClear);
+            Controls.Add(btnCalculate);
+            Controls.Add(txtAge);
+            Controls.Add(txtName);
+            Controls.Add(txtWeight);
+            Controls.Add(txtHeight);
+            Controls.Add(cmbActivity);
+            Controls.Add(rdoFemale);
+            Controls.Add(rdoMale);
+            Controls.Add(label6);
+            Controls.Add(label2);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(lblName);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load_1;
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label label1;
+        private Label lblName;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label2;
+        private Label label6;
+        private RadioButton rdoMale;
+        private RadioButton rdoFemale;
+        private ComboBox cmbActivity;
+        private TextBox txtHeight;
+        private TextBox txtWeight;
+        private TextBox txtName;
+        private TextBox txtAge;
+        private Button btnCalculate;
+        private Button btnClear;
+        private Label lblBMIValue;
+        private Label lblCategory;
+        private Label lblRisk;
+        private RichTextBox rtbReport;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private PictureBox picLogo;
+    }
+}
